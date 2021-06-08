@@ -14,11 +14,13 @@
         <mat-icon>menu</mat-icon>
       </button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item>Item 1</button>
-        <button mat-menu-item>Item 2</button>
+        <button mat-menu-item routerLink="/alunos"
+          routerLinkActive="selected">Alunos</button>
+        <button mat-menu-item routerLink="/professores"
+          routerLinkActive="selected">Professores</button>
       </mat-menu>
 
-      <span> My first SPA</span>
+      <span>My first SPA</span>
       <span class="example-spacer"></span>
       <button mat-icon-button class="example-icon favorite-icon"
         aria-label="Example icon-button with heart icon">
